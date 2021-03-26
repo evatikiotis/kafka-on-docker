@@ -13,6 +13,7 @@ docker-compose exec broker kafka-console-producer --broker-list localhost:9092 -
 
 #### initialize the Kafka consumer console, which will listen to bootstrap server localhost at port 9092 at topic test from beginning
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-beginning
+docker-compose exec broker kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-beginning
 
 
 #### list all topics
